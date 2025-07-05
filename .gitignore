@@ -1,6 +1,9 @@
 # Build directory
 build/
 
+# vscode settings
+.vscode/
+
 # Isodir directory
 isodir/
 
