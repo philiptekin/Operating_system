@@ -1,6 +1,9 @@
 # Build directory
 build/
 
+# Isodir directory
+isodir/
+
 # Prerequisites
 *.d
 
