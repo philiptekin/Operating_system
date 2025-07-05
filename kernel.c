@@ -112,7 +112,6 @@ void terminal_putchar(char c)
         terminal_column = 0;
         if (++terminal_row == VGA_HEIGHT) {
             terminal_scroll();
-            // terminal_row set inside terminal_scroll()
         }
         return;
     }
@@ -123,7 +122,6 @@ void terminal_putchar(char c)
         terminal_column = 0;
         if (++terminal_row == VGA_HEIGHT) {
             terminal_scroll();
-            // terminal_row set inside terminal_scroll()
         }
     }
 }
@@ -150,7 +148,6 @@ void kernel_main(void)
     terminal_writestring("This is a simple kernel written in C.\n");
 
     for(int i = 0; i < 100; i++) {
-        terminal_writestring("A");
-        terminal_putchar('\n');
+        terminal_writestring("A\n");
     }
 }
