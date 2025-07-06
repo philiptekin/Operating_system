@@ -147,7 +147,9 @@ void kernel_main(void)
     terminal_writestring("Welcome to the Operating System Kernel.\n");
     terminal_writestring("This is a simple kernel written in C.\n");
 
-    for(int i = 0; i < 100; i++) {
+	/*
+	for(int i = 0; i < 100; i++) {
         terminal_writestring("A\n");
-    }
+    } 
+	*/
 }
